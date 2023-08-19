@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.main-profile-div {
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f9fa;
+    padding: 70px;
+}
+
+.profile-div {
+    width: 800px;
+    min-height: 600px;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 15px;
+    padding: 0px 0px 15px 0px;
+}
+
+.update-back-div {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.sign-in-button {
+    --color: #000;
+    font-family: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 2.8em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.sign-in-button:before {
+    --color: rgb(148, 148, 148);
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 130px;
+    width: 400px;
+    border-radius: 50%;
+}
+
+.sign-in-button:hover {
+    color: #fff;
+}
+
+.sign-in-button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+.sign-in-button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.sign-in-button:active:before {
+    background: rgb(148, 148, 148);
+    transition: background 0s;
+}
+
+.back-icon {
+    text-decoration: none;
+    font-size: 22px;
+    color: #000;
+}
+
+.back-icon:hover {
+    color: rgb(148, 148, 148);
+}
+
+.profile-img-details-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img-div {
+    height: 170px;
+    width: 160px;
+    border-radius: 20px;
+    background-color: rgb(148, 148, 148);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 2px;
+    position: relative;
+}
+
+.sub-profile-img-div {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: conatin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.update-image-input {
+    display: none;
+}
+
+.update-image-btn {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #fafafa;
+    position: absolute;
+    right: -7px;
+    bottom: -5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.camera-icon {
+    font-size: 19px;
+}
+
+.details-div {
+    width: 90%;
+}
+
+.inputs, .update-name-dis {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 5px;
+    font-size: 24px;
+}
+
+.inputs:focus, .update-name-dis:focus {
+    outline: none;
+    border: 2px solid rgb(148, 148, 148);
+}
+
+.deatils-heading {
+    margin-top: 5px;
+    font-size: 24px;
+}
+
+.edit-icon{
+    margin-left: 20px;
+}
+
+.user-icon {
+    font-size: 90px;
+}
+
+.update-name-dis{
+    border: none;
+    outline: none;
+
+}

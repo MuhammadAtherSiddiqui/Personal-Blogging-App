@@ -1,0 +1,318 @@
+* {
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+}
+
+font {
+    font-family: 'Edu SA Beginner', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    background-color: #949494 !important;
+}
+
+.nav-bar-txt {
+    color: #fff !important;
+    font-size: 35px;
+}
+
+.logout-btn-hdr {
+    --color: #fff;
+    color: rgb(255, 255, 255);
+    font-family: inherit;
+    display: inline-block;
+    width: 120px;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(148, 148, 148) !important;
+}
+
+.logout-btn-hdr:before {
+    --color: #fff;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 130px;
+    width: 400px;
+    border-radius: 50%;
+}
+
+.logout-btn-hdr:hover {
+    color: rgb(148, 148, 148);
+}
+
+.logout-btn-hdr:before {
+
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+.logout-btn-hdr:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.logout-btn-hdr:active:before {
+    background: rgb(0, 0, 0);
+    transition: background 0s;
+}
+
+.labels {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.name-hdr {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+}
+
+.dash-hd-div {
+    width: 100%;
+    height: 100px;
+    background-color: ua;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-heading {
+    font-weight: 600;
+}
+
+.main-div {
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f9fa;
+    padding-top: 20px;
+}
+
+.create-post-div {
+    width: 100%;
+    background-color: #fff;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 20px;
+    padding: 60px;
+}
+
+.inputs {
+    width: 100%;
+    min-height: 50PX;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+    font-size: 30px;
+    resize: none;
+    font-weight: 600;
+}
+
+.inputs:focus {
+    outline: none;
+    border: 2px solid rgb(148, 148, 148);
+    box-shadow: rgb(148, 148, 148) 0px 5px 15px;
+}
+
+.textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    font-size: 28px;
+}
+
+.publish-btn {
+    --color: #000;
+    /* color: #7749f8; */
+    display: inline-block;
+    width: 180px;
+    height: 2.8em;
+    line-height: 2.5em;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff !important;
+}
+
+.publish-btn:before {
+    --color: #fff;
+    color: #fff;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 130px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: rgb(148, 148, 148);
+}
+
+.publish-btn:hover {
+    color: #fff;
+}
+
+.publish-btn:before {
+
+    top: 100%;
+    left: 100%;
+    transition: all .5s;
+}
+
+.publish-btn:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.publish-btn:active:before {
+    background: #050505;
+    transition: background 0s;
+}
+
+.my-blogs-div {
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+}
+
+.blog-div {
+    width: 100%;
+    min-height: 200px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 20px;
+}
+
+.blog-account-details {
+    display: flex;
+    
+}
+
+.blog-account-pic {
+    border: rgb(148, 148, 148) 0.1em solid;
+    width: 100px;
+    max-height: 120px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.profile-icon {
+    font-size: 64px;
+}
+
+.blog-account-name {
+    margin-left: 15px;
+    width: 50%;
+    margin-left: 20px;
+}
+
+.blog-title {
+    font-size: 26px;
+    font-weight: bold;
+    max-height: 120px;
+    overflow: hidden;
+}
+
+.name {
+    font-size: 20px;
+    opacity: 0.9;
+    font-weight: 600;
+}
+
+.blog-body {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    word-break: break-all;
+
+}
+
+.blog-footer {
+    margin-top: 20px;
+    height: 50px;
+}
+
+.button {
+    --color: rgb(148, 148, 148);
+    font-family: inherit;
+    display: inline-block;
+    width: 6em;
+    height: 2.6em;
+    line-height: 2.5em;
+    overflow: hidden;
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 6px;
+    position: relative;
+}
+
+.button::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.button:hover {
+    color: white;
+}
+
+.button:before {
+    top: 100%;
+    left: 100%;
+    transition: .3s all;
+}
+
+.button:hover::before {
+    top: -30px;
+    left: -30px;
+}
+
+.delete {
+    margin-left: 10px;
+    --color: rgb(148, 148, 148);
+}
+
+.user-profile-image {
+    width: 100%;
+    height: 100%;
+}

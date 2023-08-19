@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light header">
+        <div class="container">
+            <a class="navbar-brand nav-bar-txt font" href="#">
+                Persnol Blogging App
+            </a>
+            <div class="d-flex flex-direction-colomn">
+                <div class="name-hdr">M.Ather</div>
+                <button class="logout-btn-hdr font" mt-4 id="logout-btn">Logout</button>
+            </div>
+        </div>
+    </nav>
+    <div class="dash-hd-div ">
+        <div class="container">
+            <h1 class="dashboard-heading font">Dashboard</h1>
+        </div>
+    </div>
+    <div class="main-div">
+        <div class="container">
+            <div class="create-post-div font">
+                <h2 class="mb-4">Write your own blog</h2>
+                <textarea type="text" name="signin" id="blog-title" class="inputs font"
+                    placeholder="Enter title"></textarea>
+                <textarea name="blog-body" id="blog-body" class="inputs textarea mt-4"
+                    placeholder="What's on your mind"></textarea>
+                <button class="publish-btn font" mt-4 id="logout-btn" onclick="publishBlog()">Publish blog</button>
+            </div>
+            <div class="my-blogs-div">
+                <h2 class="my-blog-hd">My Blog</h2>
+                <div id="my-blogs-div">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/e0836ffa6a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script type="module" src="dashboard.js"></script>
+</body>
+
+</html>
